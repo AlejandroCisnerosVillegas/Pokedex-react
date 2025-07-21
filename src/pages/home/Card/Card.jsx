@@ -35,6 +35,17 @@ export default function Card({ card }) {
         <h4 className={css.altura_poke}>10cm</h4>
         <h4 className={css.peso_poke}>peso</h4>
         <h4 className={css.habitat_poke}>habitat</h4>
+        <div className={css.div_stats}>
+          {itemPokemon?.stats?.map((sta, index) => {
+            return (
+              <h6 key={index} className={css.item_stats}>
+                <span className={css.name}>{sta.stat.name}</span>
+                <progress value={sta.base_stat} max={110}></progress>
+                <span className={css.numero}>{sta.base_stat}</span>
+              </h6>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
