@@ -16,6 +16,7 @@ export default function Card({ card }) {
   return (
     <div className={css.card}>
       <img
+        className={css.img_poke}
         src={itemPokemon?.sprites?.other["official-artwork"]?.front_default}
         alt="Pokemon"
       />
