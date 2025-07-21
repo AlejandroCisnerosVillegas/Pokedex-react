@@ -35,12 +35,32 @@
   }
   .name_card {
     margin-top: 8px;
-    padding: 1px 4px;
     font-size: 1.2rem;
     text-transform: capitalize;
     display: block;
     font-weight: 900;
     -webkit-text-stroke: 0.4px #ffffff9e;
     -webkit-text-fill-color: #000;
+  }
+  .altura_poke {
+    margin-top: 2px;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    display: block;
+    color: #484848;
+  }
+  .peso_poke {
+    margin-top: 2px;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    display: block;
+    color: #484848;
+  }
+  .habitat_poke {
+    margin-top: 2px;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    display: block;
+    color: #484848;
   }
 }
