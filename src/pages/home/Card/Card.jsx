@@ -46,6 +46,15 @@ export default function Card({ card }) {
             );
           })}
         </div>
+        <div className={css.div_type_color}>
+          {itemPokemon?.types?.map((ti, index) => {
+            return (
+              <h6 key={index} className={css.color_type}>
+                {ti.type.name}
+              </h6>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
