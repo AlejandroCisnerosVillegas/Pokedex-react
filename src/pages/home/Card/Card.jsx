@@ -21,7 +21,7 @@ export default function Card({ card }) {
     };
     dataEspecie();
   }, []);
-  console.log(especiePokemon?.color?.name);
+  console.log(itemPokemon);
   return (
     <div className={css.card}>
       <img
