@@ -22,6 +22,12 @@ export default function Card({ card }) {
     dataEspecie();
   }, []);
   console.log(itemPokemon);
+  let pokeId = itemPokemon?.id?.toString();
+  if (pokeId?.length === 1) {
+    pokeId = "00" + pokeId;
+  } else if (pokeId?.length === 2) {
+    pokeId = "0" + pokeId;
+  }
   return (
     <div className={css.card}>
       <img
@@ -30,7 +36,7 @@ export default function Card({ card }) {
         alt="Pokemon"
       />
       <div className={`bg-${especiePokemon?.color?.name} ${css.sub_card}`}>
-        <strong className={css.id_card}>{itemPokemon.id}</strong>
+        <strong className={css.id_card}>{pokeId}</strong>
         <strong className={css.name_card}>{itemPokemon.name}</strong>
         <h4 className={css.altura_poke}>Altura: {itemPokemon.height}0 cm.</h4>
         <h4 className={css.peso_poke}>Peso: {itemPokemon.weight} Kg.</h4>
