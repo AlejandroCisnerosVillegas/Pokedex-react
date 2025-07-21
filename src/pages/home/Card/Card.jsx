@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import css from "./card.module.scss";
 import axios from "axios";
-import { URL_POKEMON } from "../../../api/apiRest";
+import { URL_ESPECIES, URL_POKEMON } from "../../../api/apiRest";
 
 export default function Card({ card }) {
   const [itemPokemon, setItemPokemon] = useState({});
-  console.log(itemPokemon);
+  const [especiePokemon, setEspeciePokemon] = useState({});
   useEffect(() => {
     const dataPokemon = async () => {
       const api = await axios.get(`${URL_POKEMON}/${card.name}`);
@@ -13,6 +13,15 @@ export default function Card({ card }) {
     };
     dataPokemon();
   }, []);
+  useEffect(() => {
+    const dataEspecie = async () => {
+      const URL = card.url.split("/");
+      const api = await axios.get(`${URL_ESPECIES}/${URL[6]}`);
+      setEspeciePokemon(api.data);
+    };
+    dataEspecie();
+  }, []);
+  console.log(especiePokemon?.color?.name);
   return (
     <div className={css.card}>
       <img
@@ -20,7 +29,7 @@ export default function Card({ card }) {
         src={itemPokemon?.sprites?.other["official-artwork"]?.front_default}
         alt="Pokemon"
       />
-      <div className={css.sub_card}>
+      <div className={`bg-${especiePokemon?.color?.name} ${css.sub_card}`}>
         <strong className={css.id_card}>001</strong>
         <strong className={css.name_card}>name</strong>
         <h4 className={css.altura_poke}>10cm</h4>
