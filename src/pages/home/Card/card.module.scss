@@ -100,7 +100,6 @@
   justify-content: space-between;
   margin: 6px 0; // corregido
 }
-
 .color_type {
   border: 1px solid #424242;
   border-radius: 4px;
@@ -109,4 +108,23 @@
   line-height: 17px;
   width: 50px;
   color: white;
+}
+.div_evolucion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .item_evo {
+    > img {
+      width: 80px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.4);
+        transition-duration: 300ms;
+        z-index: 56;
+      }
+    }
+    > h6 {
+      text-align: center;
+    }
+  }
 }
