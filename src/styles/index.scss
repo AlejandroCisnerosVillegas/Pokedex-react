@@ -8,14 +8,25 @@
 }
 body {
   &::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
+    height: 10px;
   }
+
   &::-webkit-scrollbar-thumb {
-    background: rgb(18, 113, 215);
-    border-radius: 5px;
+    background: linear-gradient(180deg, #3b4cca, #2a75bb); // azul tipo Pokémon
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(180deg, #2a75bb, #1d5ebd);
+    }
   }
+
   &::-webkit-scrollbar-track {
-    background: #afaeae;
+    background: #e0e0e0;
+    border-radius: 10px;
   }
 }
 // ? Por colores card

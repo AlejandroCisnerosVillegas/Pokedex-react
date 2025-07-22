@@ -11,38 +11,68 @@
   display: flex;
   justify-content: center;
   margin: 40px 0;
+
   .div_pagination {
     display: flex;
-    width: auto;
-    background-color: #5865f2;
-    border-radius: 8px;
-    overflow: hidden;
-    .item_izquierdo {
-      background-color: #5865f2;
-      height: 30px;
-      width: 30px;
-      color: white;
-      display: grid;
-      place-items: center;
-      cursor: pointer;
-    }
-    .item {
-      height: 30px;
-      width: 40px;
-      color: white;
-      display: grid;
-      place-items: center;
-      background-color: #424242;
-      border: 1px solid #5865f2;
-    }
+    gap: 10px;
+    background-color: transparent;
+    border-radius: 12px;
+    overflow: visible;
+
+    .item,
+    .item_izquierdo,
     .item_derecho {
-      background-color: #5865f2;
-      height: 30px;
-      width: 30px;
-      color: white;
-      display: grid;
-      place-items: center;
+      height: 36px;
+      min-width: 36px;
+      padding: 0 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 600;
       cursor: pointer;
+      user-select: none;
+      border-radius: 8px;
+      border: 1.5px solid transparent;
+      color: #4a4a4a;
+      background-color: rgba(59, 76, 202, 0.1); /* azul muy suave */
+      transition: background-color 0.25s ease, color 0.25s ease,
+        transform 0.15s ease;
+
+      &:hover {
+        background-color: rgba(59, 76, 202, 0.25);
+        color: #2a2a2a;
+        transform: translateY(-2px);
+      }
+    }
+
+    .item_izquierdo,
+    .item_derecho {
+      background-color: transparent;
+      border: none;
+      font-weight: 700;
+      color: #3b4cca;
+      font-size: 20px;
+      padding: 0 12px;
+
+      &:hover {
+        background-color: rgba(59, 76, 202, 0.1);
+        transform: translateY(-1px);
+      }
+    }
+
+    .item.active {
+      color: #3b4cca;
+      border-bottom: 3px solid #3b4cca;
+      background-color: transparent;
+      font-weight: 700;
+      cursor: default;
+      transform: none;
+
+      &:hover {
+        background-color: transparent;
+        transform: none;
+      }
     }
   }
 }
