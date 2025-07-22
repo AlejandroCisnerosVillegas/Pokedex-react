@@ -1,7 +1,7 @@
 import React from "react";
 import * as Falcons from "react-icons/fa";
 import css from "./header.module.scss";
-import logo from "../../../assets/pokemon-logo.png";
+import logo from "../../../../public/assets/Pokemon-logo.png";
 
 export default function Header({ obtenerSearch }) {
   return (
