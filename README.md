@@ -26,7 +26,7 @@ La app también incorpora un buscador en tiempo real que filtra por nombre y un 
   <img src="./public/img/Pokedex-03.webp" alt="Descripción de la imagen" width="60%">
 </p>
 
-**Consulta la versión preliminar del proyecto aquí:** [https://PokeApi–Pokedex.com](https://github.com/AlejandroCisnerosVillegas/Pokedex-react.git)
+**Consulta la versión preliminar del proyecto aquí:** [https://PokeApi–Pokedex.com](https://www.alejandrovillegas.dev/projects/project-10/index.html)
 
 # 📌 Información del Proyecto
 
