@@ -11,7 +11,6 @@ export default function Card({ card }) {
   const [itemPokemon, setItemPokemon] = useState({});
   const [especiePokemon, setEspeciePokemon] = useState({});
   const [evoluciones, setEvoluciones] = useState([]);
-  console.log(evoluciones);
   useEffect(() => {
     const dataPokemon = async () => {
       const api = await axios.get(`${URL_POKEMON}/${card.name}`);
