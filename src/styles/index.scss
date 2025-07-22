@@ -6,6 +6,18 @@
   padding: 0;
   box-sizing: content-box;
 }
+body {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgb(18, 113, 215);
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #afaeae;
+  }
+}
 // ? Por colores card
 .bg-green {
   background: #49d0b0;
