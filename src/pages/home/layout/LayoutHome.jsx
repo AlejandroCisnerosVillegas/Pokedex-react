@@ -10,6 +10,7 @@ export default function LayoutHome() {
   const [arrayPokemon, setArrayPokemon] = useState([]);
   const [xpage, setXpage] = useState(1);
   const [globalPokemon, setGlobalPokemon] = useState([]);
+  const [search, setSearch] = useState([]);
   useEffect(() => {
     const api = async () => {
       const limit = 15;
@@ -30,10 +31,18 @@ export default function LayoutHome() {
     const resut = await Promise.all(promises);
     setGlobalPokemon(resut);
   };
-  console.log(globalPokemon);
+  const filterPokemon =
+    search?.length > 0
+      ? globalPokemon?.filter((pokemon) => pokemon?.name?.includes(search))
+      : arrayPokemon;
+  const obtenerSearch = (e) => {
+    const texto = e.toLowerCase();
+    setSearch(texto);
+    setXpage(1);
+  };
   return (
     <div className={css.layout}>
-      <Header />
+      <Header obtenerSearch={obtenerSearch} />
       <section className={css.section_pagination}>
         <div className={css.div_pagination}>
           <span
@@ -68,7 +77,7 @@ export default function LayoutHome() {
         </div>
       </section>
       <div className={css.card_content}>
-        {arrayPokemon.map((card, index) => {
+        {filterPokemon.map((card, index) => {
           return <Card key={index} card={card} />;
         })}
       </div>
