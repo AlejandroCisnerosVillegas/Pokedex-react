@@ -64,4 +64,49 @@ Para ejecutar este proyecto de forma local, asegúrate de tener instalado:
 git clone https://github.com/AlejandroCisnerosVillegas/Pokedex-react.git
 ```
 
-2. Accede al directorio del proyecto:
+2. **Accede al directorio** del proyecto:
+
+```bash
+cd Pokedex-react
+```
+
+3. **Instala las dependencias** del proyecto con Yarn:
+
+```bash
+yarn install
+```
+
+---
+
+## 🔧 Ejecución en Entorno de Desarrollo
+
+Para iniciar el servidor local de desarrollo con **Vite**, ejecuta:
+
+```bash
+yarn dev
+```
+
+Esto levantará la app en la siguiente URL (por defecto):
+👉 http://localhost:5173/
+
+El servidor recargará automáticamente si haces cambios en el código.
+
+---
+
+## ⚙️ Construcción para Producción
+
+Para generar una versión optimizada del proyecto para producción, ejecuta:
+
+```bash
+yarn build
+```
+
+Esto creará una carpeta **/dist** con todos los archivos listos para ser desplegados.
+
+---
+
+## 📌 Notas Adicionales
+
+- El proyecto es completamente responsivo, compatible con dispositivos **móviles** y de **escritorio**.
+
+- Se recomienda usar un navegador moderno como **Google Chrome** o **Firefox** para mejores resultados.
