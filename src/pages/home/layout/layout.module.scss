@@ -15,8 +15,10 @@
   .div_pagination {
     display: flex;
     gap: 10px;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
     border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     overflow: visible;
 
     .item,
@@ -34,8 +36,8 @@
       user-select: none;
       border-radius: 8px;
       border: 1.5px solid transparent;
-      color: #4a4a4a;
-      background-color: rgba(59, 76, 202, 0.1); /* azul muy suave */
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #2a2a2a;
       transition: background-color 0.25s ease, color 0.25s ease,
         transform 0.15s ease;
 
