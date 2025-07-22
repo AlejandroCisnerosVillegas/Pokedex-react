@@ -1,12 +1,67 @@
-# React + Vite
+# PokéApi – Pokédex Web Interactiva
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web desarrollada con **React** y **Vite**, diseñada para ofrecer una experiencia fluida al explorar información detallada de Pokémon. Utiliza Axios para consumir datos directamente desde la **PokéAPI**, permitiendo consultar hasta los primeros 1000 Pokémon registrados en su base de datos oficial.
 
-Currently, two official plugins are available:
+<p align="center">
+  <img src="./src/assets/Pokedex-01.webp" alt="Descripción de la imagen" width="60%">
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La interfaz está construida con **componentes modulares de React** y gestionada mediante **hooks (useState, useEffect)**, lo que permite un manejo eficiente del estado y del ciclo de vida de los datos. Cada Pokémon se muestra en una tarjeta personalizada según su tipo, que incluye:
 
-## Expanding the ESLint configuration
+- Imagen principal, nombre e ID oficial.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Altura, peso y tipo(s).
+
+- Estadísticas base (HP, Ataque, Defensa, etc.) representadas con barras de progreso.
+
+- Evoluciones, con efectos visuales al pasar el cursor.
+
+<p align="center">
+  <img src="./src/assets/Pokedex-02.webp" alt="Descripción de la imagen" width="60%">
+</p>
+
+La app también incorpora un buscador en tiempo real que filtra por nombre y un sistema de paginación dinámica, permitiendo navegar entre más de 67 páginas con 15 Pokémon por vista. El diseño es completamente responsivo, adaptándose a todo tipo de pantallas, desde móviles hasta escritorios.
+
+<p align="center">
+  <img src="./src/assets/Pokedex-03.webp" alt="Descripción de la imagen" width="60%">
+</p>
+
+**Consulta la versión preliminar del proyecto aquí:** [https://PokeApi–Pokedex.com](https://github.com/AlejandroCisnerosVillegas/Pokedex-react.git)
+
+# 📌 Información del Proyecto
+
+Este proyecto ha sido desarrollado como parte del portafolio de soluciones tecnológicas, con el objetivo de ofrecer una herramienta eficiente y funcional para usuarios autodidactas interesados en la gestión y desarrollo de proyectos web.
+
+- **Área**: Desarrollo de Proyectos Web
+
+- **Usuario Final**: Autodidactas y Desarrolladores
+
+- **Fecha de Desarrollo**: 19 de julio de 2025
+
+- **Portafolio de Proyectos**: [www.alejandrovillegas.dev](https://www.alejandrovillegas.dev)
+
+# 📘 Guía de Instalación y Configuración del Proyecto
+
+Este proyecto fue desarrollado con **React** y empaquetado con **Vite**, utilizando **Yarn** como gestor de dependencias. Se conecta a la **PokéAPI** mediante **Axios** para obtener información dinámica de Pokémon.
+
+---
+
+## 🖥️ Requisitos del Sistema
+
+Para ejecutar este proyecto de forma local, asegúrate de tener instalado:
+
+- **Node.js** (v18 o superior recomendado)
+- **Yarn** (v1.22 o superior)  
+  👉 Instálalo desde: https://classic.yarnpkg.com/lang/en/docs/install/
+
+---
+
+## 📁 Instalación del Proyecto
+
+1. **Clona este repositorio** o descarga los archivos del proyecto:
+
+```bash
+git clone https://github.com/AlejandroCisnerosVillegas/Pokedex-react.git
+```
+
+2. Accede al directorio del proyecto:
