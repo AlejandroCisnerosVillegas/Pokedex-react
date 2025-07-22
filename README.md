@@ -3,7 +3,7 @@
 Este proyecto es una aplicación web desarrollada con **React** y **Vite**, diseñada para ofrecer una experiencia fluida al explorar información detallada de Pokémon. Utiliza Axios para consumir datos directamente desde la **PokéAPI**, permitiendo consultar hasta los primeros 1000 Pokémon registrados en su base de datos oficial.
 
 <p align="center">
-  <img src="./public/assets/Pokedex-01.webp" alt="Descripción de la imagen" width="60%">
+  <img src="./public/img/Pokedex-01.webp" alt="Descripción de la imagen" width="60%">
 </p>
 
 La interfaz está construida con **componentes modulares de React** y gestionada mediante **hooks (useState, useEffect)**, lo que permite un manejo eficiente del estado y del ciclo de vida de los datos. Cada Pokémon se muestra en una tarjeta personalizada según su tipo, que incluye:
@@ -17,13 +17,13 @@ La interfaz está construida con **componentes modulares de React** y gestionada
 - Evoluciones, con efectos visuales al pasar el cursor.
 
 <p align="center">
-  <img src="./public/assets/Pokedex-02.webp" alt="Descripción de la imagen" width="60%">
+  <img src="./public/img/Pokedex-02.webp" alt="Descripción de la imagen" width="60%">
 </p>
 
 La app también incorpora un buscador en tiempo real que filtra por nombre y un sistema de paginación dinámica, permitiendo navegar entre más de 67 páginas con 15 Pokémon por vista. El diseño es completamente responsivo, adaptándose a todo tipo de pantallas, desde móviles hasta escritorios.
 
 <p align="center">
-  <img src="./public/assets/Pokedex-03.webp" alt="Descripción de la imagen" width="60%">
+  <img src="./public/img/Pokedex-03.webp" alt="Descripción de la imagen" width="60%">
 </p>
 
 **Consulta la versión preliminar del proyecto aquí:** [https://PokeApi–Pokedex.com](https://github.com/AlejandroCisnerosVillegas/Pokedex-react.git)
