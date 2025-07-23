@@ -67,7 +67,7 @@ git clone https://github.com/AlejandroCisnerosVillegas/Pokedex-react.git
 2. **Accede al directorio** del proyecto:
 
 ```bash
-cd Pokedex-react
+cd pokedex-react
 ```
 
 3. **Instala las dependencias** del proyecto con Yarn:
